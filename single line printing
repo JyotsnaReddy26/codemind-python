@@ -1,0 +1,6 @@
+a,b,c,d=map(int,input("enter numbers:").split())
+print(a,b,c,d,end="")
+a,b,c,d=input("enter names:").split()
+print(a,b,c,d)
+a=26.3
+print('{:.6f}'.format(a))                                                                
