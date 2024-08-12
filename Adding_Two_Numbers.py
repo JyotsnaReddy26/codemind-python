@@ -1,4 +1,4 @@
-
-a=int(input())
-b=int(input())
-print(a+b)
+x=int(input())
+y=int(input())
+sum=x+y
+print(sum)
