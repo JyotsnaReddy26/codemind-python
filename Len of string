@@ -1,0 +1,3 @@
+txt="NumeroTres"
+k=len(txt)
+print(k)
