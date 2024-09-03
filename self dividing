@@ -1,0 +1,12 @@
+def is_self_dividing(n):
+    for digit in str(n):
+        if digit == '0' or n % int(digit) != 0:
+            return False
+    return True
+a=int(input())
+b=int(input())
+for i in range(a, b+ 1):
+    if is_self_dividing(i):
+        print(i, end=" ")
+
+
