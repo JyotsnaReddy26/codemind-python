@@ -1,0 +1,7 @@
+n=int(input())
+lst=list(map(int,input().split()))
+k=int(input())
+count=0
+if k in lst:
+    count=lst.count(k)
+    print(count)
