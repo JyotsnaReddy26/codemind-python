@@ -1,0 +1,21 @@
+class Solution(object):
+    def divideArray(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[List[int]]
+        """
+        nums.sort()
+        result = []
+
+        for i in range(0, len(nums), 3):
+            # Take a group of 3 elements
+            group = nums[i:i+3]
+
+            # Check if the group has exactly 3 elements and satisfies the max difference condition
+            if len(group) == 3 and group[2] - group[0] <= k:
+                result.append(group)
+            else:
+                return []
+
+        return result
